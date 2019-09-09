@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7EFAE"
+        android:onClick="convert"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="30dp">
+
+        <EditText
+            android:id="@+id/enterNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Number"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <RadioGroup
+            android:id="@+id/RadioButton"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/toMmRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="From cm to mm"
+                android:textColor="#E91E63"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:typeface="normal" />
+
+            <RadioButton
+                android:id="@+id/toMRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From cm to m"
+                android:textColor="#FF5722"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/toKmRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From cm to km"
+                android:textColor="#009688"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/toCmRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From mm to cm"
+                android:textColor="#9C27B0"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/formMtoCmRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From m to cm"
+                android:textColor="#CE1212"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/fromKmtoCmRradioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From km to cm"
+                android:textColor="#3F51B5"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/convertButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#269DAD"
+            android:onClick="convert"
+            android:text="Convert"
+            android:textColor="#1A0202"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
